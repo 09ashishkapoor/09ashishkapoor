@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="310" viewBox="0 0 800 310">
+  <defs>
+
+    <!-- Green glow filter for matrix prompt text -->
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- ── Typewriter clip paths (each rect grows from 0 to text width) ── -->
+
+    <!-- L1: "> who are you" = 13 chars × 8.4px ≈ 109px  -->
+    <clipPath id="clip1">
+      <rect x="20" y="42" width="0" height="22">
+        <animate attributeName="width" from="0" to="120" begin="0.5s" dur="0.9s" fill="freeze"/>
+      </rect>
+    </clipPath>
+
+    <!-- L2: "Hi 👋, I am Ashish" ≈ 18 chars + wide emoji ≈ 165px -->
+    <clipPath id="clip2">
+      <rect x="20" y="68" width="0" height="22">
+        <animate attributeName="width" from="0" to="175" begin="1.8s" dur="1.3s" fill="freeze"/>
+      </rect>
+    </clipPath>
+
+    <!-- L3: "> What are your skills" = 22 chars ≈ 185px -->
+    <clipPath id="clip3">
+      <rect x="20" y="112" width="0" height="22">
+        <animate attributeName="width" from="0" to="195" begin="3.5s" dur="1.5s" fill="freeze"/>
+      </rect>
+    </clipPath>
+
+    <!-- L4: "I specialize in the forbidden art of" = 36 chars ≈ 302px -->
+    <clipPath id="clip4">
+      <rect x="20" y="138" width="0" height="22">
+        <animate attributeName="width" from="0" to="318" begin="5.3s" dur="2.4s" fill="freeze"/>
+      </rect>
+    </clipPath>
+
+    <!-- L5: "Coding with Vibes i.e VibeCoding" = 32 chars ≈ 269px -->
+    <clipPath id="clip5">
+      <rect x="20" y="164" width="0" height="22">
+        <animate attributeName="width" from="0" to="282" begin="8.0s" dur="2.1s" fill="freeze"/>
+      </rect>
+    </clipPath>
+
+    <!-- L6: "> are you a noob" = 16 chars ≈ 134px -->
+    <clipPath id="clip6">
+      <rect x="20" y="206" width="0" height="22">
+        <animate attributeName="width" from="0" to="148" begin="10.7s" dur="1.1s" fill="freeze"/>
+      </rect>
+    </clipPath>
+
+    <!-- L7: "yes very much so, a forever noob" = 32 chars ≈ 269px -->
+    <clipPath id="clip7">
+      <rect x="20" y="232" width="0" height="22">
+        <animate attributeName="width" from="0" to="282" begin="12.1s" dur="2.1s" fill="freeze"/>
+      </rect>
+    </clipPath>
+
+    <!-- L8: "in a fast moving field of AI" = 28 chars ≈ 235px -->
+    <clipPath id="clip8">
+      <rect x="20" y="258" width="0" height="22">
+        <animate attributeName="width" from="0" to="250" begin="14.5s" dur="1.9s" fill="freeze"/>
+      </rect>
+    </clipPath>
+
+  </defs>
+
+  <!-- ═══════════════════════════════════════
+       TERMINAL WINDOW
+  ═══════════════════════════════════════ -->
+
+  <!-- Outer glow / border -->
+  <rect width="800" height="310" rx="12" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.25"/>
+
+  <!-- Window background -->
+  <rect width="800" height="310" rx="12" fill="#0d0d0d"/>
+
+  <!-- Title bar -->
+  <rect width="800" height="34" rx="12" fill="#1c1c1c"/>
+  <rect y="22" width="800" height="12" fill="#1c1c1c"/>
+
+  <!-- macOS-style traffic lights -->
+  <circle cx="22" cy="17" r="6" fill="#ff5f57"/>
+  <circle cx="43" cy="17" r="6" fill="#ffbd2e"/>
+  <circle cx="64" cy="17" r="6" fill="#28c840"/>
+
+  <!-- Terminal title -->
+  <text x="400" y="22" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="12" fill="#555">
+    matrix@ashish: ~
+  </text>
+
+  <!-- Subtle horizontal scanline overlay -->
+  <rect width="800" height="310" rx="12" fill="url(#scanlines)" opacity="1"/>
+
+  <!-- ═══════════════════════════════════════
+       CONTENT — Q&amp;A Lines
+  ═══════════════════════════════════════ -->
+
+  <!-- ── Q1: who are you ── -->
+  <text clip-path="url(#clip1)" x="20" y="60"
+    font-family="'Courier New', Courier, monospace" font-size="14"
+    fill="#00ff41" filter="url(#glow)">&gt; who are you</text>
+
+  <text clip-path="url(#clip2)" x="20" y="86"
+    font-family="'Courier New', Courier, monospace" font-size="14"
+    fill="#b0ffb8">Hi &#x1F44B;, I am Ashish</text>
+
+  <!-- ── Q2: skills ── -->
+  <text clip-path="url(#clip3)" x="20" y="130"
+    font-family="'Courier New', Courier, monospace" font-size="14"
+    fill="#00ff41" filter="url(#glow)">&gt; What are your skills</text>
+
+  <text clip-path="url(#clip4)" x="20" y="156"
+    font-family="'Courier New', Courier, monospace" font-size="14"
+    fill="#b0ffb8">I specialize in the forbidden art of</text>
+
+  <text clip-path="url(#clip5)" x="20" y="182"
+    font-family="'Courier New', Courier, monospace" font-size="14"
+    fill="#b0ffb8">Coding with Vibes i.e VibeCoding</text>
+
+  <!-- ── Q3: noob ── -->
+  <text clip-path="url(#clip6)" x="20" y="224"
+    font-family="'Courier New', Courier, monospace" font-size="14"
+    fill="#00ff41" filter="url(#glow)">&gt; are you a noob</text>
+
+  <text clip-path="url(#clip7)" x="20" y="250"
+    font-family="'Courier New', Courier, monospace" font-size="14"
+    fill="#b0ffb8">yes very much so, a forever noob</text>
+
+  <text clip-path="url(#clip8)" x="20" y="276"
+    font-family="'Courier New', Courier, monospace" font-size="14"
+    fill="#b0ffb8">in a fast moving field of AI</text>
+
+  <!-- ═══════════════════════════════════════
+       BLINKING CURSOR  (appears after last line finishes)
+  ═══════════════════════════════════════ -->
+  <rect x="270" y="260" width="8" height="14" fill="#00ff41" opacity="0">
+    <animate id="cursorShow" attributeName="opacity" from="0" to="1"
+      begin="16.4s" dur="0.001s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;0;1;0" dur="0.85s"
+      begin="cursorShow.end" repeatCount="indefinite"/>
+  </rect>
+
+</svg>
