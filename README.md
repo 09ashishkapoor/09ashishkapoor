@@ -34,9 +34,6 @@ I like building workflows that feel less like typing commands and more like stee
 - exploring autonomous coding agents
 - turning ideas into shipped interfaces
 
-### ./system_metrics
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=09ashishkapoor&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=000000&title_color=00ff41&text_color=88ff88&icon_color=00ff41)
 
 ### ./network
 
