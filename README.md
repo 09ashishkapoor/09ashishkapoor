@@ -12,7 +12,7 @@
 
 ### ./access_log
 
-![Profile Views](https://komarev.com/ghpvc/?username=09ashishkapoor&color=00ff41&style=for-the-badge&label=ACCESS+COUNT)
+![Profile Views](https://komarev.com/ghpvc/?username=09ashishkapoor&color=000000&style=for-the-badge&label=ACCESS+COUNT)
 
 ```txt
 01000001 01000111 01000101 01001110 01010100 01001001 01000011
@@ -26,10 +26,10 @@ I like building workflows that feel less like typing commands and more like stee
 
 ### ./loaded_modules
 
-![Pi.dev](https://img.shields.io/badge/Pi.dev-00ff41?style=for-the-badge&labelColor=000000)
-![OpenAI Codex](https://img.shields.io/badge/OpenAI%20Codex-00ff41?style=for-the-badge&logo=openai&logoColor=00ff41&labelColor=000000)
-![Hermes Agent](https://img.shields.io/badge/Hermes%20Agent-00ff41?style=for-the-badge&labelColor=000000)
-![OpenClaw](https://img.shields.io/badge/OpenClaw-00ff41?style=for-the-badge&labelColor=000000)
+![Pi.dev](https://img.shields.io/badge/Pi.dev-000000?style=for-the-badge&labelColor=003b12)
+![OpenAI Codex](https://img.shields.io/badge/OpenAI%20Codex-000000?style=for-the-badge&logo=openai&logoColor=00ff41&labelColor=003b12)
+![Hermes Agent](https://img.shields.io/badge/Hermes%20Agent-000000?style=for-the-badge&labelColor=003b12)
+![OpenClaw](https://img.shields.io/badge/OpenClaw-000000?style=for-the-badge&labelColor=003b12)
 
 ### ./current_processes
 
